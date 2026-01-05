@@ -1,0 +1,34 @@
+<odoo>
+    <record id="view_club_tree" model="ir.ui.view">
+        <field name="name">club.tree</field>
+        <field name="model">gestion.club</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="date_creation"/>
+                <field name="responsable_id"/>
+                <field name="nb_etudiants"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_club_form" model="ir.ui.view">
+        <field name="name">club.form</field>
+        <field name="model">gestion.club</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date_creation"/>
+                        <field name="responsable_id"/>
+                        <field name="description"/>
+                        <field name="nb_etudiants" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
+

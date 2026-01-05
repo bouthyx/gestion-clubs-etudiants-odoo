@@ -1,0 +1,26 @@
+<odoo>
+    <menuitem id="menu_gestion_root" name="Clubs Étudiants"/>
+
+    <record id="action_club" model="ir.actions.act_window">
+        <field name="name">Clubs</field>
+        <field name="res_model">gestion.club</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_etudiant" model="ir.actions.act_window">
+        <field name="name">Étudiants</field>
+        <field name="res_model">gestion.etudiant</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_evenement" model="ir.actions.act_window">
+    <field name="name">Événements</field>
+    <field name="res_model">gestion.evenement</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+
+    <menuitem id="menu_club" name="Clubs" parent="menu_gestion_root" action="action_club"/>
+    <menuitem id="menu_etudiant" name="Étudiants" parent="menu_gestion_root" action="action_etudiant"/>
+    <menuitem id="menu_evenement" name="Événements" parent="menu_gestion_root" action="action_evenement"/>
+</odoo>

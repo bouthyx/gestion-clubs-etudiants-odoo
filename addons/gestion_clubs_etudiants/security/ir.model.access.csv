@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_club,access_club,model_gestion_club,,1,1,1,1
+access_etudiant,access_etudiant,model_gestion_etudiant,,1,1,1,1
+access_gestion_evenement,access_gestion_evenement,model_gestion_evenement,,1,1,1,1
